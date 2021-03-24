@@ -1,0 +1,210 @@
+html, body{
+	width: 100%;
+}
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+.header::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #003171;
+	z-index: 2;
+}
+.container {
+	width: 1366px;
+	margin: 0 auto;
+	padding: 0 32px;
+}
+.header-body {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	align-items: center;
+}
+.header-logo {
+	font-size: 24px;
+	color: #ecf0f1;
+	font-family: "Open Sans",sans-serif;
+	z-index: 3;
+}
+.header-burger {
+	display: none;
+}
+.header-list {
+	display: flex;
+	position: relative;
+	z-index: 3;
+}
+.header-item + .header-item{
+	margin-left: 45px;
+}
+.header-link {
+	font-family: "Open Sans",sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #ecf0f1;
+	font-size: 11px;
+	padding: 10px 0;
+}
+/*---------------------------------------*/
+/*---------------------------------------*/
+
+.hero {
+	padding-top: 70px;
+	margin: 0 auto;
+	height: 580px;
+	width: 1366px;
+	background-image: url(../image/blue-swoop-dots-slider-background.png);
+	background-repeat: no-repeat;
+}
+.hero-body {
+	display: flex;
+	justify-content: space-between;
+}
+.hero-body__text {
+	padding-top: 80px;
+}
+.hero-body__text-title {
+	max-width: 617px;
+	color: #ecf0f1;
+	font-family: Poppins, sans-serif;
+	font-size: 60px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.hero-body__button-group {
+	margin-top: 40px;
+	display: flex;
+}
+.button-group__link {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-width: 192px;
+	min-height: 55px;
+	border: 1px solid #ecf0f1;
+	border-radius: 10px;
+}
+.button-link__text {
+	color: #ffffff;
+	font-family: Poppins, sans-serif;
+	font-size: 12px;
+	max-width: 80px;
+}
+.link-apple {
+	margin-left: 15px;
+}
+.rotate-photo__img {
+	animation-name: rotate;
+	animation-duration: 1s; 
+	animation-timing-function: linear;
+}
+.rotate-photo__img.rotate{
+	animation-name: rotate;
+	animation-duration: 1s; 
+	animation-timing-function: linear;
+}
+@keyframes rotate 
+	{ from 
+		{ transform: rotate(0deg); 
+			} 
+			to { 
+				transform: rotate(360deg); 
+			} 
+}
+
+/* ----------------------------------------- */
+/* ---------------------------------------- */
+.features {
+	margin-top: 40px;
+}
+.title {
+	color: #161e26;
+	font-family: Oswald,sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+.features-inner {
+	display: flex;
+	max-width: 966px;
+    justify-content: space-between;
+    margin: 0 auto;
+	 padding: 50px 0;
+}
+.features-column__wrap{
+	display: flex;
+}
+.features-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 315px;
+}
+.features-column__text {
+	max-width: 194px;
+	height: 315px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.column-left__text{
+	margin-left: 25px;
+}
+.iphone-img {
+	background-image: url("../image/iPhoneFrame.png");
+	width: 216px;
+	height: 431px;
+	position: relative;
+    top: -50px;
+}
+.iphone-img img{
+	position: absolute;
+	top: 45px;
+	left: 12px;
+}
+.features-circle {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 1px solid rgba(0,0,0,0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.features-column__text_wrap {
+	padding-top: 25px;
+}
+.text-title {
+	color: #161e26;
+	 font-family: Roboto,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    /* text-align: left; */
+}
+.text-line {
+	margin-top: 5px;
+}
+.text-discribe {
+	margin-top: 10px;
+    color: #6c8784;
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.column-right__text{
+	text-align: right;
+	margin-right: 25px;
+}
